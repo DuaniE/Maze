@@ -1,4 +1,4 @@
-package maze3D;
+package algorithms.maze3D;
 
 public class Maze3DState {
 }
