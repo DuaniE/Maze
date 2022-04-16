@@ -3,6 +3,10 @@ package algorithms.mazeGenerators;
 public class Cell {
     public int colP;
     public int rowP;
+    public boolean up;
+    public boolean down;
+    public boolean left;
+    public boolean right;
 
     Cell(int column, int row){
         this.colP = column;
@@ -21,5 +25,11 @@ public class Cell {
     }
     public void setRowP(int rowP) {
         this.rowP = rowP;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        Cell c = (Cell) o;
+        return (this.rowP == c.rowP && this.colP == c.colP);
     }
 }

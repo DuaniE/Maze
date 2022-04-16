@@ -17,7 +17,10 @@ public class Node {
     }
 
     public boolean canMerge(Cell a){
+        if (a.rowP == this.value.rowP && a.colP == this.value.colP)
+            return false;
         return a.rowP == this.value.rowP || a.colP == this.value.colP;
     }
+
 
 }
